@@ -18,7 +18,7 @@ int main()
 
   printf("Enter 5 students details: \n");
 
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 5; i++)
   {
     printf("Student no: %d \n", i + 1);
     printf("Enter student's nick name: \n");
@@ -41,7 +41,7 @@ int main()
   fp = fopen(filename, "w+");
   fprintf(fp, "Student Roll, Student Name, Math, Chemistry, Physics, Percentage");
 
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < 5; i++)
   {
     float percentage = (data[i].math_marks + data[i].chem_marks + data[i].phy_marks) / 300.0 * 100;
     fprintf(fp, "\n %d, %s, %f, %f, %f, %f", data[i].roll, data[i].name, data[i].math_marks, data[i].chem_marks, data[i].phy_marks, percentage);
